@@ -17,12 +17,12 @@ html, body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: 100%;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 400px; 
 }
 
 button, #calc, #clear {
     width: 100%;
-    box-sizing: border-box; /* Include padding in the width calculation */
+    box-sizing: border-box;
     padding: 10px;
     font-size: 18px;
     border: 1px solid #ccc;
