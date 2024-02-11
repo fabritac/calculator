@@ -3,41 +3,48 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 #container {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 320px;
-    margin: auto;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-input {
+.calc-numbers {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     width: 100%;
-    grid-column: span 4;
-    margin-bottom: 5px;
+    max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+button, #calc, #clear {
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    padding: 10px;
     font-size: 18px;
-}
-
-.button {
-    width: calc(25% - 5px); 
-    height: 80px;
-    margin: 2.5px; 
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 16px;
-    user-select: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
-.button {
-    background-color: #3498db;
+button:hover, #clear:hover {
+    background-color: #f0f0f0;
+}
+
+#calc, #clear {
+    font-size: 20px;
+}
+
+#clear {
+    background-color: #ff6347;
     color: #fff;
-    border: 1px solid #2980b9;
+    border: none;
 }
 
-.button:hover {
-    background-color: #2980b9;
+#clear:hover {
+    background-color: #d84315;
 }
